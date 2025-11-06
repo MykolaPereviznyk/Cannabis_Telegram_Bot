@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 import random
 
-API_TOKEN = "8221026755:AAFuLGyHe25g36_exPgcAgb8czWOvjU-k6I"
+API_TOKEN = "WRITE_TOKEN"
 data_cannabis_people = Path('smoked_people.json')
 
 bot = telebot.TeleBot(API_TOKEN)
@@ -45,4 +45,5 @@ def send_statistics(message):
     bot.reply_to(message, data)
 
 bot.infinity_polling()
+
 
