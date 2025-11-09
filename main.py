@@ -8,10 +8,6 @@ data_cannabis_people = Path('smoked_people.json')
 
 bot = telebot.TeleBot(API_TOKEN)
 
-
-
-
-
 @bot.message_handler(commands=['help', 'start'])
 def send_welcome(message):
     bot.reply_to(message, "Шмаль викурити /smoke, допомога /help, Статистика /statistics")
@@ -45,5 +41,6 @@ def send_statistics(message):
     bot.reply_to(message, data)
 
 bot.infinity_polling()
+
 
 
